@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andab Care Home Health Services</title>
+
+    <meta
+      name="description"
+      content="Andab Care provides compassionate home health care in Westerville, OH."
+    />
+    <link rel="icon" type="image/png" href="pages/photos/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div id="topbar">
+      <span class="tb-left"
+        >Serving Westerville, OH and the Surrounding Areas</span
+      >
+      <div class="tb-right">
+        <span class="tb-phone">📞 (740) 909-2424</span>
+        <button class="btn-white" onclick="showPage('contact')">
+          GET IN TOUCH
+        </button>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="logo" onclick="showPage('home')">
+        <img
+          src="pages/photos/logo.png"
+          alt="Andab Care Logo"
+          class="logo-circle"
+        />
+        <div>
+          <div class="logo-name">Andab Care Home Health</div>
+          <div class="logo-sub">Medical Center</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <div class="nav-link active" id="nav-home" onclick="showPage('home')">
+          Home
+        </div>
+        <div class="nav-link" id="nav-about" onclick="showPage('about')">
+          About
+        </div>
+        <div class="dropdown">
+          <div
+            class="nav-link"
+            id="nav-services"
+            onclick="showPage('services')"
+          >
+            Services ▾
+          </div>
+          <div class="dropdown-menu">
+            <div
+              class="dropdown-item"
+              onclick="
+                showPage('services');
+                setTimeout(() => scrollToService('svc-nursing'), 100);
+              "
+            >
+              Skilled Nursing Care
+            </div>
+            <div
+              class="dropdown-item"
+              onclick="
+                showPage('services');
+                setTimeout(() => scrollToService('svc-physical'), 100);
+              "
+            >
+              Physical Therapy
+            </div>
+            <div
+              class="dropdown-item"
+              onclick="
+                showPage('services');
+                setTimeout(() => scrollToService('svc-occupational'), 100);
+              "
+            >
+              Occupational Therapy
+            </div>
+            <div
+              class="dropdown-item"
+              onclick="
+                showPage('services');
+                setTimeout(() => scrollToService('svc-personal'), 100);
+              "
+            >
+              Personal Care
+            </div>
+            <div
+              class="dropdown-item"
+              onclick="
+                showPage('services');
+                setTimeout(() => scrollToService('svc-homemaking'), 100);
+              "
+            >
+              Home Making Services
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav-link"
+          id="nav-testimonials"
+          onclick="showPage('testimonials')"
+        >
+          Testimonials
+        </div>
+        <div class="nav-link" id="nav-gallery" onclick="showPage('gallery')">
+          Gallery
+        </div>
+        <div class="nav-link" id="nav-contact" onclick="showPage('contact')">
+          Contact
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE CONTAINERS (filled by JS) -->
+    <div id="page-home" class="page active"></div>
+    <div id="page-about" class="page"></div>
+    <div id="page-services" class="page"></div>
+    <div id="page-testimonials" class="page"></div>
+    <div id="page-gallery" class="page"></div>
+    <div id="page-contact" class="page"></div>
+
+    <!-- FOOTER -->
+    <footer id="site-footer" style="background-color: #8b408b">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name">Andab Care Home Health</div>
+            <div class="footer-brand-desc">
+              Compassionate home care in Westerville, OH. Over 10 years of
+              trusted experience.
+            </div>
+            <div class="footer-phone">📞 (740) 909-2424</div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <div class="footer-link" onclick="showPage('home')">Home</div>
+            <div class="footer-link" onclick="showPage('about')">About</div>
+            <div class="footer-link" onclick="showPage('services')">
+              Services
+            </div>
+            <div class="footer-link" onclick="showPage('gallery')">Gallery</div>
+            <div class="footer-link" onclick="showPage('testimonials')">
+              Testimonials
+            </div>
+            <div class="footer-link" onclick="showPage('contact')">Contact</div>
+          </div>
+          <div>
+            <div class="footer-heading">Service Area</div>
+            <div class="footer-area">Delaware County</div>
+            <div class="footer-area">Franklin County</div>
+            <div class="footer-area">Union County</div>
+            <div class="footer-area">Lincoln County</div>
+            <div class="footer-area">Knox County</div>
+            <div class="footer-area">Fairfield County</div>
+          </div>
+          <div>
+            <div class="footer-heading">Hours</div>
+            <div class="hours-row">
+              <span>Mon–Fri</span><span class="hours-open">9AM – 5PM</span>
+            </div>
+            <div class="hours-row">
+              <span>Saturday</span><span class="hours-closed">Closed</span>
+            </div>
+            <div class="hours-row">
+              <span>Sunday</span><span class="hours-closed">Closed</span>
+            </div>
+            <div class="footer-heading" style="margin-top: 20px">
+              Stay Connected
+            </div>
+            <div class="social-pills">
+              <div class="social-pill">Facebook</div>
+              <div class="social-pill">Instagram</div>
+              <div class="social-pill">Twitter</div>
+              <div class="social-pill">YouTube</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright © 2026 Andab Care · All Rights Reserved · Westerville, OH
+        </div>
+      </div>
+    </footer>
+
+    <script src="pages.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

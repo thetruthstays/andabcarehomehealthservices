@@ -1,0 +1,540 @@
+<div class="hero" style="padding: 90px 40px 110px">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">WHAT WE PROVIDE</div>
+    <h1 class="hero-title">OUR SERVICES</h1>
+    <p class="hero-tagline" style="font-size: 17px; margin-bottom: 0">
+      Comprehensive home care tailored to your unique needs.
+    </p>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" fill="none">
+      <path d="M0,40 C360,0 1080,80 1440,20 L1440,60 L0,60 Z" fill="#fff" />
+    </svg>
+  </div>
+</div>
+
+<!-- ── CLICKABLE SERVICE MENU ── -->
+<div
+  style="
+    background: #f4fafa;
+    padding: 48px 40px 40px;
+    border-bottom: 1px solid #e0eded;
+  "
+>
+  <!--<div class="container">
+    <div class="text-center" style="margin-bottom: 32px">
+      <div class="section-eyebrow">BROWSE BY SERVICE</div>
+      <h2 class="section-title">Click a service to learn more</h2>
+    </div>
+    <div
+      id="svc-menu"
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 14px;
+      "
+    >
+      <div
+        class="svc-menu-card active"
+        onclick="scrollToService('svc-nursing')"
+        data-target="svc-nursing"
+      >
+        <div class="svc-menu-icon">🩺</div>
+        <div class="svc-menu-label">Skilled Nursing Care</div>
+      </div>
+      <div
+        class="svc-menu-card"
+        onclick="scrollToService('svc-physical')"
+        data-target="svc-physical"
+      >
+        <div class="svc-menu-icon">🦴</div>
+        <div class="svc-menu-label">Physical Therapy</div>
+      </div>
+      <div
+        class="svc-menu-card"
+        onclick="scrollToService('svc-occupational')"
+        data-target="svc-occupational"
+      >
+        <div class="svc-menu-icon">🧩</div>
+        <div class="svc-menu-label">Occupational Therapy</div>
+      </div>
+      <div
+        class="svc-menu-card"
+        onclick="scrollToService('svc-personal')"
+        data-target="svc-personal"
+      >
+        <div class="svc-menu-icon">🛁</div>
+        <div class="svc-menu-label">Personal Care</div>
+      </div>
+      <div
+        class="svc-menu-card"
+        onclick="scrollToService('svc-homemaking')"
+        data-target="svc-homemaking"
+      >
+        <div class="svc-menu-icon">🏡</div>
+        <div class="svc-menu-label">Home Making Services</div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+  <!-- ── SERVICE DETAIL SECTIONS ── -->
+  <div class="section">
+    <div class="container">
+      <!-- 01 Skilled Nursing Care -->
+      <div id="svc-nursing" class="service-row svc-detail-row">
+        <div>
+          <div class="svc-eyebrow" style="color: #1a8c8a">SERVICE 01</div>
+          <h2 class="svc-title">Skilled Nursing Care</h2>
+          <p class="svc-desc">
+            Our registered and licensed practical nurses deliver professional,
+            clinical care right in the comfort of your home. From wound care to
+            chronic disease management, our skilled nursing team provides the
+            highest standard of medical support while preserving your dignity
+            and independence.
+          </p>
+          <div class="svc-tags">
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ Wound Care & Dressing</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ Medication Management</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ IV Therapy</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ Vital Signs Monitoring</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ Chronic Disease Management</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a8c8a15;
+                border: 1.5px solid #1a8c8a30;
+                color: #1a8c8a;
+              "
+              >✓ Post-Surgery Care</span
+            >
+          </div>
+          <button class="btn-primary" onclick="showPage('contact')">
+            Get Started
+          </button>
+        </div>
+        <div
+          class="svc-img"
+          style="
+            background: linear-gradient(135deg, #1a8c8a, #0d5e5d);
+            box-shadow: 0 20px 60px #1a8c8a30;
+          "
+        >
+          <img src="pages/photos/0_1.jpg" alt="Skilled Nursing Care" />
+          <div class="svc-img-title">Skilled Nursing Care</div>
+          <div class="svc-img-loc">Andab Care · Westerville, OH</div>
+        </div>
+      </div>
+
+      <!-- 02 Physical Therapy -->
+      <div id="svc-physical" class="service-row reverse svc-detail-row">
+        <div>
+          <div class="svc-eyebrow" style="color: #1a6b9a">SERVICE 02</div>
+          <h2 class="svc-title">Physical Therapy</h2>
+          <p class="svc-desc">
+            Our licensed physical therapists design personalised rehabilitation
+            programs to restore movement, reduce pain, and rebuild strength
+            after illness, injury, or surgery — all in the familiar environment
+            of your own home. We help you regain independence and get back to
+            the activities you love.
+          </p>
+          <div class="svc-tags">
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Mobility & Gait Training</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Strength & Balance Exercises</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Pain Management</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Post-Surgical Rehab</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Fall Prevention</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #1a6b9a15;
+                border: 1.5px solid #1a6b9a30;
+                color: #1a6b9a;
+              "
+              >✓ Stroke Recovery</span
+            >
+          </div>
+          <button
+            class="btn-primary"
+            style="background: #1a6b9a"
+            onclick="showPage('contact')"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="svc-img"
+          style="
+            background: linear-gradient(135deg, #1a6b9a, #0d4a72);
+            box-shadow: 0 20px 60px #1a6b9a30;
+          "
+        >
+          <img src="pages/photos/0_3.jpg" alt="Physical Therapy" />
+          <div class="svc-img-title">Physical Therapy</div>
+          <div class="svc-img-loc">Andab Care · Westerville, OH</div>
+        </div>
+      </div>
+
+      <!-- 03 Occupational Therapy -->
+      <div id="svc-occupational" class="service-row svc-detail-row">
+        <div>
+          <div class="svc-eyebrow" style="color: #5a3d8a">SERVICE 03</div>
+          <h2 class="svc-title">Occupational Therapy</h2>
+          <p class="svc-desc">
+            Our occupational therapists help clients regain the ability to
+            perform everyday tasks — dressing, cooking, bathing, and more — with
+            confidence and safety. We assess the home environment and adapt
+            routines to maximise independence and quality of life for people of
+            all ages and conditions.
+          </p>
+          <div class="svc-tags">
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Daily Living Skills</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Home Safety Assessment</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Adaptive Equipment Training</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Cognitive Rehabilitation</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Fine Motor Skills</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #5a3d8a15;
+                border: 1.5px solid #5a3d8a30;
+                color: #5a3d8a;
+              "
+              >✓ Energy Conservation</span
+            >
+          </div>
+          <button
+            class="btn-primary"
+            style="background: #5a3d8a"
+            onclick="showPage('contact')"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="svc-img"
+          style="
+            background: linear-gradient(135deg, #5a3d8a, #3d2060);
+            box-shadow: 0 20px 60px #5a3d8a30;
+          "
+        >
+          <img src="pages/photos/0_4.jpg" alt="Occupational Therapy" />
+          <div class="svc-img-title">Occupational Therapy</div>
+          <div class="svc-img-loc">Andab Care · Westerville, OH</div>
+        </div>
+      </div>
+
+      <!-- 04 Personal Care -->
+      <div id="svc-personal" class="service-row reverse svc-detail-row">
+        <div>
+          <div class="svc-eyebrow" style="color: #0369a1">SERVICE 04</div>
+          <h2 class="svc-title">Personal Care</h2>
+          <p class="svc-desc">
+            Our personal care aides assist with the intimate activities of daily
+            living in a respectful and professional manner. We help clients
+            maintain hygiene, comfort, and dignity while remaining safely in
+            their own homes — preserving independence every step of the way.
+          </p>
+          <div class="svc-tags">
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Bathing & Showering</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Dressing & Grooming</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Oral & Hair Care</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Toileting & Incontinence</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Mobility & Transfers</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0369a115;
+                border: 1.5px solid #0369a130;
+                color: #0369a1;
+              "
+              >✓ Skin & Nail Care</span
+            >
+          </div>
+          <button
+            class="btn-primary"
+            style="background: #0369a1"
+            onclick="showPage('contact')"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="svc-img"
+          style="
+            background: linear-gradient(135deg, #0369a1, #024d78);
+            box-shadow: 0 20px 60px #0369a130;
+          "
+        >
+          <img src="pages/photos/0_6.png" alt="Personal Care" />
+          <div class="svc-img-title">Personal Care</div>
+          <div class="svc-img-loc">Andab Care · Westerville, OH</div>
+        </div>
+      </div>
+
+      <!-- 05 Home Making Services -->
+      <div
+        id="svc-homemaking"
+        class="service-row svc-detail-row"
+        style="margin-bottom: 0"
+      >
+        <div>
+          <div class="svc-eyebrow" style="color: #0f766e">SERVICE 05</div>
+          <h2 class="svc-title">Home Making Services</h2>
+          <p class="svc-desc">
+            A clean, organised, and safe home environment is essential to
+            wellbeing. Our homemaking caregivers handle the household tasks that
+            keep life running smoothly — allowing clients to focus on their
+            health and enjoy a comfortable, stress-free living space.
+          </p>
+          <div class="svc-tags">
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Light Housekeeping</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Laundry & Linen Changes</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Meal Planning & Preparation</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Grocery Shopping & Errands</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Dish Washing & Kitchen Care</span
+            >
+            <span
+              class="svc-tag"
+              style="
+                background: #0f766e15;
+                border: 1.5px solid #0f766e30;
+                color: #0f766e;
+              "
+              >✓ Home Organisation</span
+            >
+          </div>
+          <button
+            class="btn-primary"
+            style="background: #0f766e"
+            onclick="showPage('contact')"
+          >
+            Get Started
+          </button>
+        </div>
+        <div
+          class="svc-img"
+          style="
+            background: linear-gradient(135deg, #0f766e, #084d47);
+            box-shadow: 0 20px 60px #0f766e30;
+          "
+        >
+          <img src="pages/photos/0_7.png" alt="Home Making Services" />
+          <div class="svc-img-title">Home Making Services</div>
+          <div class="svc-img-loc">Andab Care · Westerville, OH</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Not Sure Which Service You Need?</h2>
+    <p>
+      Contact us and we'll help you find the perfect care solution for your
+      situation.
+    </p>
+    <button class="btn-primary" onclick="showPage('contact')">
+      Talk to Us
+    </button>
+  </div>
+</div>
