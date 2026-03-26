@@ -36,12 +36,40 @@ a {
   --bg-soft: #f4fafa;
 }
 
-/* ── Page visibility ── */
+/* ── Page visibility & transitions ── */
 .page {
   display: none;
 }
 .page.active {
   display: block;
+  animation: pageEnter 0.38s ease forwards;
+}
+.page.page-exiting {
+  display: block;
+  animation: pageExit 0.2s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageExit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
 /* ── Utility ── */
@@ -193,6 +221,10 @@ a {
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.3s ease;
+}
+#navbar.scrolled {
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.13);
 }
 .logo {
   display: flex;

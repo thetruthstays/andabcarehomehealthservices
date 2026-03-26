@@ -85,26 +85,41 @@ function closeMobileMenu() {
 }
 
 /* ── Page Navigation ── */
+let isNavigating = false;
+
 function showPage(name) {
+  if (isNavigating) return;
+
   /* Close mobile menu */
   closeMobileMenu();
 
-  /* Hide all pages */
-  document.querySelectorAll(".page").forEach(function (p) {
-    p.classList.remove("active");
-    p.innerHTML = "";
-  });
-
-  /* Show selected page */
   const pageEl = document.getElementById("page-" + name);
-  if (pageEl && PAGES[name]) {
+  if (!pageEl || !PAGES[name]) return;
+
+  /* Don't re-navigate to the same page */
+  if (pageEl.classList.contains("active")) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  isNavigating = true;
+
+  const currentPage = document.querySelector(".page.active");
+
+  function doSwap() {
+    /* Clear all pages */
+    document.querySelectorAll(".page").forEach(function (p) {
+      p.classList.remove("active", "page-exiting");
+      p.innerHTML = "";
+    });
+
     fetch(PAGES[name])
-      .then((response) => response.text())
-      .then((html) => {
+      .then(function (response) { return response.text(); })
+      .then(function (html) {
         pageEl.innerHTML = html;
         pageEl.classList.add("active");
 
-        /* Update nav active state */
+        /* Update desktop nav active state */
         document.querySelectorAll(".nav-link").forEach(function (l) {
           l.classList.remove("active");
         });
@@ -118,16 +133,27 @@ function showPage(name) {
         const mNavEl = document.getElementById("mnav-" + name);
         if (mNavEl) mNavEl.classList.add("active");
 
-        /* Scroll to top */
-        window.scrollTo(0, 0);
+        /* Smooth scroll to top */
+        window.scrollTo({ top: 0, behavior: "smooth" });
 
-        /* Init testimonials if on about page */
+        /* Init testimonials after enter animation */
         if (name === "about") {
           setTimeout(function () {
             renderTestimonial("about");
-          }, 0);
+          }, 380);
         }
-      });
+
+        isNavigating = false;
+      })
+      .catch(function () { isNavigating = false; });
+  }
+
+  if (currentPage) {
+    /* Animate out current page, then swap */
+    currentPage.classList.add("page-exiting");
+    setTimeout(doSwap, 210);
+  } else {
+    doSwap();
   }
 }
 
@@ -170,4 +196,14 @@ function resetForm() {
 /* ── Init: Load Home Page on Start ── */
 document.addEventListener("DOMContentLoaded", function () {
   showPage("home");
+
+  /* Navbar scroll-shadow */
+  const navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 8) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  }, { passive: true });
 });
