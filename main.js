@@ -159,13 +159,9 @@ function showPage(name) {
 
 /* ── Scroll to Service ── */
 function scrollToService(id) {
-  console.log("Scrolling to service:", id);
   const element = document.getElementById(id);
   if (element) {
-    console.log("Element found:", element);
     element.scrollIntoView({ behavior: "smooth" });
-  } else {
-    console.log("Element not found for id:", id);
   }
 }
 
