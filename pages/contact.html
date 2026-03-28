@@ -29,65 +29,67 @@
         >
           BOOK AN APPOINTMENT OR ASK US A QUESTION
         </h2>
-        <div id="contact-form">
-          <div class="form-group">
-            <label class="form-label">Full Name</label
-            ><input
-              class="form-input"
-              type="text"
-              id="f-name"
-              placeholder="Your full name"
-            />
+        <div class="contact-form-card">
+          <div id="contact-form">
+            <div class="form-group">
+              <label class="form-label">Full Name</label
+              ><input
+                class="form-input"
+                type="text"
+                id="f-name"
+                placeholder="Your full name"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label
+              ><input
+                class="form-input"
+                type="email"
+                id="f-email"
+                placeholder="your@email.com"
+                mail-to="andabcare@gmail.com"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label
+              ><input
+                class="form-input"
+                type="tel"
+                id="f-phone"
+                placeholder="(000) 000-0000"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label
+              ><textarea
+                class="form-input"
+                id="f-message"
+                rows="5"
+                placeholder="Book your appointment today!"
+              ></textarea>
+            </div>
+            <button
+              class="btn-primary"
+              style="font-size: 14px; padding: 14px 40px"
+              onclick="submitForm()"
+            >
+              Submit Message
+            </button>
           </div>
-          <div class="form-group">
-            <label class="form-label">Email Address</label
-            ><input
-              class="form-input"
-              type="email"
-              id="f-email"
-              placeholder="your@email.com"
-              mail-to="andabcare@gmail.com"
-            />
+          <div class="success-box" id="success-box">
+            <div class="success-icon">✅</div>
+            <div class="success-title">Message Sent!</div>
+            <div class="success-msg">
+              Thank you for reaching out. We'll be in touch shortly.
+            </div>
+            <button
+              class="btn-primary"
+              style="margin-top: 24px"
+              onclick="resetForm()"
+            >
+              Send Another
+            </button>
           </div>
-          <div class="form-group">
-            <label class="form-label">Phone Number</label
-            ><input
-              class="form-input"
-              type="tel"
-              id="f-phone"
-              placeholder="(000) 000-0000"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label
-            ><textarea
-              class="form-input"
-              id="f-message"
-              rows="5"
-              placeholder="Book your appointment today!"
-            ></textarea>
-          </div>
-          <button
-            class="btn-primary"
-            style="font-size: 14px; padding: 14px 40px"
-            onclick="submitForm()"
-          >
-            Submit Message
-          </button>
-        </div>
-        <div class="success-box" id="success-box">
-          <div class="success-icon">✅</div>
-          <div class="success-title">Message Sent!</div>
-          <div class="success-msg">
-            Thank you for reaching out. We'll be in touch shortly.
-          </div>
-          <button
-            class="btn-primary"
-            style="margin-top: 24px"
-            onclick="resetForm()"
-          >
-            Send Another
-          </button>
         </div>
       </div>
       <div>
@@ -95,14 +97,15 @@
         <h3
           style="
             font-family: &quot;Lora&quot;, serif;
-            font-size: 22px;
+            font-size: clamp(24px, 3vw, 36px);
             font-weight: 700;
             color: #1a1a2e;
-            margin-bottom: 28px;
+            margin-bottom: 32px;
           "
         >
           Serving Westerville, OH<br />and Surrounding Areas
         </h3>
+        <div class="contact-info-panel">
         <div class="contact-info-card">
           <div class="contact-info-icon">📧</div>
           <div>
@@ -122,7 +125,7 @@
           <div>
             <div class="contact-info-label">Service Area</div>
             <div class="contact-info-val">
-              Delaware county · Franklin county · Union county · Lincoln county · Knox county . Farefield county
+              Delaware county · Franklin county · Union county · Lincoln county · Knox county · Fairfield county
             </div>
           </div>
         </div>
@@ -156,6 +159,7 @@
             <span class="hours-day">Sunday</span
             ><span class="hours-closed">Closed</span>
           </div>
+        </div>
         </div>
       </div>
     </div>

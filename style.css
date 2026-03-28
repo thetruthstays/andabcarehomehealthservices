@@ -860,6 +860,20 @@ a {
   gap: 64px;
   align-items: start;
 }
+.contact-form-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.09), 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef3f3;
+}
+.contact-info-panel {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.09), 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef3f3;
+}
 .form-group {
   margin-bottom: 18px;
 }
